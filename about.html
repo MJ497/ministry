@@ -1,0 +1,272 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us - Grace Ministries</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="min-h-screen bg-gray-50 font-sans">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <img src="https://picsum.photos/50?random=1" alt="Ministry Logo" class="h-10 w-10 rounded-full">
+                <h1 class="text-xl font-bold text-primary">Grace Ministries</h1>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-gray-700 hover:text-primary transition">Home</a>
+                <a href="books.html" class="text-gray-700 hover:text-primary transition">Books</a>
+                <a href="seed.html" class="text-gray-700 hover:text-primary transition">Sow Seeds</a>
+                <a href="events.html" class="text-gray-700 hover:text-primary transition">Events</a>
+                <a href="about.html" class="text-primary font-bold transition">About</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-700">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-2 px-4 shadow-md">
+            <a href="index.html" class="block py-2 text-gray-700 hover:text-primary">Home</a>
+            <a href="books.html" class="block py-2 text-gray-700 hover:text-primary">Books</a>
+            <a href="seed.html" class="block py-2 text-gray-700 hover:text-primary">Sow Seeds</a>
+            <a href="events.html" class="block py-2 text-gray-700 hover:text-primary">Events</a>
+            <a href="about.html" class="block py-2 text-primary font-bold">About</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- About Summary -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4 max-w-3xl">
+                <h2 class="text-3xl font-bold text-center mb-6 text-primary">About Grace Ministries</h2>
+                <p class="text-lg text-gray-700 text-center mb-8">Grace Ministries is dedicated to spreading the gospel, empowering believers, and serving our community through faith, teaching, and love. Our mission is to nurture spiritual growth, provide support, and create a welcoming space for all to encounter God's grace.</p>
+            </div>
+        </section>
+
+        <!-- Meet the Ministers -->
+        <section class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <h2 class="text-2xl font-bold text-center mb-10 text-primary">Meet the Ministers</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 justify-items-stretch items-stretch">
+                    <!-- Minister 1 -->
+                    <div class="minister-card cursor-pointer bg-white rounded-lg shadow-md p-6 flex flex-col items-center h-full" data-minister="1">
+                        <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="Pastor John Okoro" class="w-32 h-32 object-cover rounded-full mb-4 border-4 border-primary">
+                        <h3 class="text-xl font-bold mb-1">Pastor John Okoro</h3>
+                        <p class="text-gray-600">Lead Pastor</p>
+                        <div class="flex space-x-3 mt-3">
+                            <a href="https://facebook.com/okoro" target="_blank" class="text-blue-600 hover:text-blue-800"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://tiktok.com/@okoro" target="_blank" class="text-black hover:text-gray-700"><i class="fab fa-tiktok"></i></a>
+                            <a href="https://instagram.com/okoro" target="_blank" class="text-pink-500 hover:text-pink-700"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class="flex-grow"></div>
+                    </div>
+                    <!-- Minister 2 -->
+                    <div class="minister-card cursor-pointer bg-white rounded-lg shadow-md p-6 flex flex-col items-center h-full" data-minister="2">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Rev. Grace Ndlovu" class="w-32 h-32 object-cover rounded-full mb-4 border-4 border-primary">
+                        <h3 class="text-xl font-bold mb-1">Rev. Grace Ndlovu</h3>
+                        <p class="text-gray-600">Associate Pastor</p>
+                        <div class="flex space-x-3 mt-3">
+                            <a href="https://facebook.com/ndlovu" target="_blank" class="text-blue-600 hover:text-blue-800"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://tiktok.com/@ndlovu" target="_blank" class="text-black hover:text-gray-700"><i class="fab fa-tiktok"></i></a>
+                            <a href="https://instagram.com/ndlovu" target="_blank" class="text-pink-500 hover:text-pink-700"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class="flex-grow"></div>
+                    </div>
+                    <!-- Minister 3 -->
+                    <div class="minister-card cursor-pointer bg-white rounded-lg shadow-md p-6 flex flex-col items-center h-full" data-minister="3">
+                        <img src="https://randomuser.me/api/portraits/men/54.jpg" alt="Evangelist Samuel Mensah" class="w-32 h-32 object-cover rounded-full mb-4 border-4 border-primary">
+                        <h3 class="text-xl font-bold mb-1">Evangelist Samuel Mensah</h3>
+                        <p class="text-gray-600">Youth & Outreach</p>
+                        <div class="flex space-x-3 mt-3">
+                            <a href="https://facebook.com/mensah" target="_blank" class="text-blue-600 hover:text-blue-800"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://tiktok.com/@mensah" target="_blank" class="text-black hover:text-gray-700"><i class="fab fa-tiktok"></i></a>
+                            <a href="https://instagram.com/mensah" target="_blank" class="text-pink-500 hover:text-pink-700"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class="flex-grow"></div>
+                    </div>
+                    <!-- Minister 4 -->
+                    <div class="minister-card cursor-pointer bg-white rounded-lg shadow-md p-6 flex flex-col items-center h-full" data-minister="4">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Pastor Amina Bello" class="w-32 h-32 object-cover rounded-full mb-4 border-4 border-primary">
+                        <h3 class="text-xl font-bold mb-1">Pastor Amina Bello</h3>
+                        <p class="text-gray-600">Children's Ministry</p>
+                        <div class="flex space-x-3 mt-3">
+                            <a href="https://facebook.com/bello" target="_blank" class="text-blue-600 hover:text-blue-800"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://tiktok.com/@bello" target="_blank" class="text-black hover:text-gray-700"><i class="fab fa-tiktok"></i></a>
+                            <a href="https://instagram.com/bello" target="_blank" class="text-pink-500 hover:text-pink-700"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class="flex-grow"></div>
+                    </div>
+                    <!-- Minister 5 -->
+                    <div class="minister-card cursor-pointer bg-white rounded-lg shadow-md p-6 flex flex-col items-center h-full" data-minister="5">
+                        <img src="https://randomuser.me/api/portraits/men/33.jpg" alt="Pastor David Chikere" class="w-32 h-32 object-cover rounded-full mb-4 border-4 border-primary">
+                        <h3 class="text-xl font-bold mb-1">Pastor David Chikere</h3>
+                        <p class="text-gray-600">Music Director</p>
+                        <div class="flex space-x-3 mt-3">
+                            <a href="https://facebook.com/chikere" target="_blank" class="text-blue-600 hover:text-blue-800"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://tiktok.com/@chikere" target="_blank" class="text-black hover:text-gray-700"><i class="fab fa-tiktok"></i></a>
+                            <a href="https://instagram.com/chikere" target="_blank" class="text-pink-500 hover:text-pink-700"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class="flex-grow"></div>
+                    </div>
+                    <!-- Minister 6 -->
+                    <div class="minister-card cursor-pointer bg-white rounded-lg shadow-md p-6 flex flex-col items-center h-full" data-minister="6">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Sister Linda Moyo" class="w-32 h-32 object-cover rounded-full mb-4 border-4 border-primary">
+                        <h3 class="text-xl font-bold mb-1">Sister Linda Moyo</h3>
+                        <p class="text-gray-600">Welfare & Hospitality</p>
+                        <div class="flex space-x-3 mt-3">
+                            <a href="https://facebook.com/moyo" target="_blank" class="text-blue-600 hover:text-blue-800"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://tiktok.com/@moyo" target="_blank" class="text-black hover:text-gray-700"><i class="fab fa-tiktok"></i></a>
+                            <a href="https://instagram.com/moyo" target="_blank" class="text-pink-500 hover:text-pink-700"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class="flex-grow"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Minister Modal -->
+        <div id="minister-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center">
+            <div class="bg-white rounded-lg shadow-lg max-w-md w-full p-6 relative">
+                <button id="close-minister-modal" class="absolute top-2 right-2 text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
+                <img id="modal-minister-img" src="" alt="" class="w-32 h-32 object-cover rounded-full mb-4 mx-auto border-4 border-primary">
+                <h3 id="modal-minister-name" class="text-2xl font-bold mb-2 text-center"></h3>
+                <p id="modal-minister-role" class="text-primary text-center mb-2 font-semibold"></p>
+                <p id="modal-minister-bio" class="text-gray-700 text-center"></p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Grace Ministries</h3>
+                    <p class="mb-4">Spreading the gospel through teaching, worship, and service.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-accent transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white hover:text-accent transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white hover:text-accent transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white hover:text-accent transition"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-accent transition">Home</a></li>
+                        <li><a href="books.html" class="hover:text-accent transition">Books</a></li>
+                        <li><a href="seed.html" class="hover:text-accent transition">Sow Seeds</a></li>
+                        <li><a href="events.html" class="hover:text-accent transition">Events</a></li>
+                        <li><a href="about.html" class="hover:text-accent transition">About</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Info</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>123 Faith Avenue, Spiritual City, SC 12345</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-2"></i>
+                            <span>(123) 456-7890</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2"></i>
+                            <span>info@graceministries.org</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p>&copy; 2025 Grace Ministries. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    // Mobile Menu Toggle
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if(mobileMenuButton) {
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    }
+
+    // Minister Modal Logic
+    const ministers = [
+        {
+            id: 1,
+            name: 'Pastor John Okoro',
+            role: 'Lead Pastor',
+            img: 'https://randomuser.me/api/portraits/men/76.jpg',
+            bio: 'Pastor John Okoro has served as the Lead Pastor of Grace Ministries for over 15 years. He is passionate about teaching the Word, mentoring leaders, and building a strong, faith-filled community.'
+        },
+        {
+            id: 2,
+            name: 'Rev. Grace Ndlovu',
+            role: 'Associate Pastor',
+            img: 'https://randomuser.me/api/portraits/women/65.jpg',
+            bio: 'Rev. Grace Ndlovu is dedicated to empowering women and youth in the church. She leads various outreach programs and is known for her compassionate heart and inspiring messages.'
+        },
+        {
+            id: 3,
+            name: 'Evangelist Samuel Mensah',
+            role: 'Youth & Outreach',
+            img: 'https://randomuser.me/api/portraits/men/54.jpg',
+            bio: 'Evangelist Samuel Mensah coordinates youth activities and evangelism. His energetic approach and love for people have brought many to Christ.'
+        },
+        {
+            id: 4,
+            name: 'Pastor Amina Bello',
+            role: "Children's Ministry",
+            img: 'https://randomuser.me/api/portraits/women/44.jpg',
+            bio: 'Pastor Amina Bello leads the children’s ministry, nurturing young hearts in faith and love. She is known for her creativity and dedication to the next generation.'
+        },
+        {
+            id: 5,
+            name: 'Pastor David Chikere',
+            role: 'Music Director',
+            img: 'https://randomuser.me/api/portraits/men/33.jpg',
+            bio: 'Pastor David Chikere directs the music ministry, inspiring worship through song and praise. His passion for music brings the congregation together in joyful worship.'
+        },
+        {
+            id: 6,
+            name: 'Sister Linda Moyo',
+            role: 'Welfare & Hospitality',
+            img: 'https://randomuser.me/api/portraits/women/68.jpg',
+            bio: 'Sister Linda Moyo coordinates welfare and hospitality, ensuring everyone feels welcome and cared for. Her kindness and organizational skills are a blessing to the ministry.'
+        }
+    ];
+    const ministerCards = document.querySelectorAll('.minister-card');
+    const ministerModal = document.getElementById('minister-modal');
+    const closeMinisterModal = document.getElementById('close-minister-modal');
+    const modalMinisterImg = document.getElementById('modal-minister-img');
+    const modalMinisterName = document.getElementById('modal-minister-name');
+    const modalMinisterRole = document.getElementById('modal-minister-role');
+    const modalMinisterBio = document.getElementById('modal-minister-bio');
+
+    ministerCards.forEach(card => {
+        card.addEventListener('click', () => {
+            const id = parseInt(card.getAttribute('data-minister'));
+            const minister = ministers.find(m => m.id === id);
+            if (minister) {
+                modalMinisterImg.src = minister.img;
+                modalMinisterName.textContent = minister.name;
+                modalMinisterRole.textContent = minister.role;
+                modalMinisterBio.textContent = minister.bio;
+                ministerModal.classList.remove('hidden');
+            }
+        });
+    });
+    closeMinisterModal.addEventListener('click', () => ministerModal.classList.add('hidden'));
+    </script>
+</body>
+</html>

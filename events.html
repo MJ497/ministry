@@ -1,0 +1,242 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Events - Grace Ministries</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="min-h-screen bg-gray-50 font-sans">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <img src="https://picsum.photos/50?random=1" alt="Ministry Logo" class="h-10 w-10 rounded-full">
+                <h1 class="text-xl font-bold text-primary">Grace Ministries</h1>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-gray-700 hover:text-primary transition">Home</a>
+                <a href="books.html" class="text-gray-700 hover:text-primary transition">Books</a>
+                <a href="seed.html" class="text-gray-700 hover:text-primary transition">Sow Seeds</a>
+                <a href="events.html" class="text-primary font-bold transition">Events</a>
+                <a href="about.html" class="text-gray-700 hover:text-primary transition">About</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-700">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-2 px-4 shadow-md">
+            <a href="index.html" class="block py-2 text-gray-700 hover:text-primary">Home</a>
+            <a href="books.html" class="block py-2 text-gray-700 hover:text-primary">Books</a>
+            <a href="seed.html" class="block py-2 text-gray-700 hover:text-primary">Sow Seeds</a>
+            <a href="events.html" class="block py-2 text-primary font-bold">Events</a>
+            <a href="about.html" class="block py-2 text-gray-700 hover:text-primary">About</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">All Events</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Event 1 -->
+                    <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                        <img src="https://picsum.photos/400/250?random=5" alt="Bible Study Event" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <div class="flex items-center text-gray-500 mb-2">
+                                <i class="far fa-calendar-alt mr-2"></i>
+                                <span>June 15, 2025</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">Weekly Bible Study</h3>
+                            <p class="text-gray-600 mb-4">Join us for an in-depth study of the Book of Romans.</p>
+                            <div class="flex justify-between items-center">
+                                <div class="flex items-center text-gray-500">
+                                    <i class="far fa-clock mr-2"></i>
+                                    <span>7:00 PM - 8:30 PM</span>
+                                </div>
+                                <button class="bg-primary text-white px-4 py-2 rounded hover:bg-indigo-700 transition register-btn">
+                                    Register
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Event 2 -->
+                    <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                        <img src="https://picsum.photos/400/250?random=6" alt="Youth Conference" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <div class="flex items-center text-gray-500 mb-2">
+                                <i class="far fa-calendar-alt mr-2"></i>
+                                <span>July 22-24, 2025</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">Youth Conference</h3>
+                            <p class="text-gray-600 mb-4">Three days of worship, teaching, and fellowship for ages 13-25.</p>
+                            <div class="flex justify-between items-center">
+                                <div class="flex items-center text-gray-500">
+                                    <i class="far fa-clock mr-2"></i>
+                                    <span>All Day Event</span>
+                                </div>
+                                <button class="bg-primary text-white px-4 py-2 rounded hover:bg-indigo-700 transition register-btn">
+                                    Register
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Event 3 -->
+                    <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                        <img src="https://picsum.photos/400/250?random=7" alt="Prayer Retreat" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <div class="flex items-center text-gray-500 mb-2">
+                                <i class="far fa-calendar-alt mr-2"></i>
+                                <span>August 5, 2025</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">Prayer Retreat</h3>
+                            <p class="text-gray-600 mb-4">A day of prayer, reflection, and spiritual renewal.</p>
+                            <div class="flex justify-between items-center">
+                                <div class="flex items-center text-gray-500">
+                                    <i class="far fa-clock mr-2"></i>
+                                    <span>9:00 AM - 4:00 PM</span>
+                                </div>
+                                <button class="bg-primary text-white px-4 py-2 rounded hover:bg-indigo-700 transition register-btn">
+                                    Register
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Register Modal -->
+        <div id="register-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center">
+            <div class="bg-white rounded-lg shadow-lg max-w-md w-full p-6 relative">
+                <button id="close-register-modal" class="absolute top-2 right-2 text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
+                <h3 class="text-2xl font-bold mb-4">Event Registration</h3>
+                <form id="register-form">
+                    <div class="mb-4">
+                        <label class="block text-gray-700 mb-1">Full Name</label>
+                        <input type="text" required class="w-full px-3 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-primary">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 mb-1">Email</label>
+                        <input type="email" required class="w-full px-3 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-primary">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 mb-1">Phone (optional)</label>
+                        <input type="tel" class="w-full px-3 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-primary">
+                    </div>
+                    <button type="submit" class="w-full bg-primary text-white py-2 rounded hover:bg-indigo-700 transition">Register</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Newsletter Subscription -->
+        <section class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4 max-w-xl">
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <h2 class="text-2xl font-bold text-center mb-4 text-primary">Subscribe for Event Updates</h2>
+                    <p class="text-center text-gray-600 mb-6">Get notified about upcoming events and news from Grace Ministries.</p>
+                    <form id="newsletter-form">
+                        <div class="mb-4">
+                            <input type="email" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Your email address">
+                        </div>
+                        <button type="submit" class="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-indigo-700 transition">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Grace Ministries</h3>
+                    <p class="mb-4">Spreading the gospel through teaching, worship, and service.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-accent transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white hover:text-accent transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white hover:text-accent transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white hover:text-accent transition"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-accent transition">Home</a></li>
+                        <li><a href="books.html" class="hover:text-accent transition">Books</a></li>
+                        <li><a href="seed.html" class="hover:text-accent transition">Sow Seeds</a></li>
+                        <li><a href="events.html" class="hover:text-accent transition">Events</a></li>
+                        <li><a href="about.html" class="hover:text-accent transition">About</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Info</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>123 Faith Avenue, Spiritual City, SC 12345</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-2"></i>
+                            <span>(123) 456-7890</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2"></i>
+                            <span>info@graceministries.org</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p>&copy; 2025 Grace Ministries. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    // Mobile Menu Toggle
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if(mobileMenuButton) {
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    }
+
+    // Register Modal Logic
+    const registerBtns = document.querySelectorAll('.register-btn');
+    const registerModal = document.getElementById('register-modal');
+    const closeRegisterModal = document.getElementById('close-register-modal');
+    const registerForm = document.getElementById('register-form');
+
+    registerBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            registerModal.classList.remove('hidden');
+        });
+    });
+    closeRegisterModal.addEventListener('click', () => {
+        registerModal.classList.add('hidden');
+    });
+    registerForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Thank you for registering! We look forward to seeing you at the event.');
+        registerModal.classList.add('hidden');
+        registerForm.reset();
+    });
+
+    // Newsletter Subscription
+    document.getElementById('newsletter-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Thank you for subscribing! You will receive updates about upcoming events.');
+        e.target.reset();
+    });
+    </script>
+</body>
+</html>

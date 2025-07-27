@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sow Seeds - Grace Ministries</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="min-h-screen bg-gray-50 font-sans">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <img src="https://picsum.photos/50?random=1" alt="Ministry Logo" class="h-10 w-10 rounded-full">
+                <h1 class="text-xl font-bold text-primary">Grace Ministries</h1>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-gray-700 hover:text-primary transition">Home</a>
+                <a href="books.html" class="text-gray-700 hover:text-primary transition">Books</a>
+                <a href="seed.html" class="text-primary font-bold transition">Sow Seeds</a>
+                <a href="events.html" class="text-gray-700 hover:text-primary transition">Events</a>
+                <a href="about.html" class="text-gray-700 hover:text-primary transition">About</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-700">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-2 px-4 shadow-md">
+            <a href="index.html" class="block py-2 text-gray-700 hover:text-primary">Home</a>
+            <a href="books.html" class="block py-2 text-gray-700 hover:text-primary">Books</a>
+            <a href="seed.html" class="block py-2 text-primary font-bold">Sow Seeds</a>
+            <a href="events.html" class="block py-2 text-gray-700 hover:text-primary">Events</a>
+            <a href="about.html" class="block py-2 text-gray-700 hover:text-primary">About</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="max-w-xl mx-auto bg-white rounded-lg shadow-lg p-8">
+                    <h2 class="text-3xl font-bold text-center mb-4 text-primary">Sow a Seed</h2>
+                    <p class="text-center text-gray-600 mb-8">Your generosity helps us reach more lives and continue our mission. Thank you for your support!</p>
+                    <form id="donation-form">
+                        <div class="mb-6">
+                            <label for="amount" class="block text-gray-700 mb-2 font-medium">Donation Amount ($)</label>
+                            <input type="number" id="amount" min="1" step="1" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required>
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 mb-2 font-medium">Prayer Request (Optional)</label>
+                            <textarea id="message" rows="3" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Let us know how we can pray for you."></textarea>
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-gray-700 mb-2 font-medium">Card Number</label>
+                            <input type="text" maxlength="19" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" placeholder="1234 5678 9012 3456">
+                        </div>
+                        <div class="mb-6 flex gap-2">
+                            <div class="w-1/2">
+                                <label class="block mb-1 text-gray-700 font-medium">Expiry</label>
+                                <input type="text" maxlength="5" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" placeholder="MM/YY">
+                            </div>
+                            <div class="w-1/2">
+                                <label class="block mb-1 text-gray-700 font-medium">CVC</label>
+                                <input type="text" maxlength="4" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" placeholder="123">
+                            </div>
+                        </div>
+                        <button type="submit" class="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-indigo-700 transition">
+                            Sow Seed by Card
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+  <!-- Floating Cart Button -->
+    <div class="fixed bottom-8 right-8">
+        <button id="cart-button" class="bg-primary text-white p-4 rounded-full shadow-lg hover:bg-indigo-700 transition">
+            <i class="fas fa-shopping-cart text-xl"></i>
+            <span id="cart-count" class="absolute -top-2 -right-2 bg-accent text-white text-xs font-bold rounded-full h-6 w-6 flex items-center justify-center">0</span>
+        </button>
+    </div>
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Grace Ministries</h3>
+                    <p class="mb-4">Spreading the gospel through teaching, worship, and service.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-accent transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white hover:text-accent transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white hover:text-accent transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white hover:text-accent transition"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-accent transition">Home</a></li>
+                        <li><a href="books.html" class="hover:text-accent transition">Books</a></li>
+                        <li><a href="seed.html" class="hover:text-accent transition">Sow Seeds</a></li>
+                        <li><a href="events.html" class="hover:text-accent transition">Events</a></li>
+                        <li><a href="about.html" class="hover:text-accent transition">About</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Info</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>123 Faith Avenue, Spiritual City, SC 12345</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-2"></i>
+                            <span>(123) 456-7890</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2"></i>
+                            <span>info@graceministries.org</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p>&copy; 2025 Grace Ministries. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    document.getElementById('donation-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const amount = document.getElementById('amount').value;
+        alert(`Thank you for your donation of $${amount}!`);
+        e.target.reset();
+    });
+    </script>
+</body>
+</html>

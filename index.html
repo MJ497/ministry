@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grace Ministries - Books, Donations & Events</title>
+    <meta name="description" content="Grace Ministries - Purchase spiritual books, sow seeds, and join our upcoming events">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="script.js" defer></script>
+        
+   
+</head>
+<body class="min-h-screen bg-gray-50 font-sans">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <img src="https://picsum.photos/50?random=1" alt="Ministry Logo" class="h-10 w-10 rounded-full">
+                <h1 class="text-xl font-bold text-primary">Grace Ministries</h1>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-primary font-bold hover:text-primary transition">Home</a>
+                <a href="books.html" class="text-gray-700 hover:text-primary transition">Books</a>
+                <a href="seed.html" class="text-gray-700 hover:text-primary transition">Sow Seeds</a>
+                <a href="events.html" class="text-gray-700 hover:text-primary transition">Events</a>
+                <a href="about.html" class="text-gray-700 hover:text-primary transition">About</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-700">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-2 px-4 shadow-md">
+            <a href="index.html" class="block py-2 text-gray-700 hover:text-primary">Home</a>
+            <a href="books.html" class="block py-2 text-gray-700 hover:text-primary">Books</a>
+            <a href="seed.html" class="block py-2 text-gray-700 hover:text-primary">Sow Seeds</a>
+            <a href="events.html" class="block py-2 text-gray-700 hover:text-primary">Events</a>
+            <a href="about.html" class="block py-2 text-gray-700 hover:text-primary">About</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION WITH VIDEO -->
+<section id="home" class="relative h-[500px] md:h-[600px] flex items-center justify-center overflow-hidden">
+    <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover z-0">
+        <source src="hero.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="absolute inset-0 bg-primary bg-opacity-40 z-10"></div>
+    <div class="relative z-20 text-center text-white w-full">
+        <h2 class="text-4xl font-bold mb-4 drop-shadow-lg">Welcome to Grace Ministries</h2>
+        <p class="text-xl mb-8 max-w-2xl mx-auto drop-shadow-lg">Growing in faith through teaching, giving, and fellowship</p>
+        <div class="flex justify-center space-x-4">
+           
+            <a href="#events" class="bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-primary-600 transition">View Events</a>
+             <a href="#books" class="border border-white-900 text-white px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition">Browse Books</a>
+        </div>
+    </div>
+</section>
+<!-- END HERO -->
+
+        <!-- Bible Verse Section -->
+        <section class="py-10 bg-white">
+            <div class="container mx-auto px-4">
+                <p class="text-2xl md:text-3xl text-black text-center mb-2 font-weight-100" style="font-weight: 100;">
+                    "Praise him with the sounding of the trumpet, praise him with the harp and lyre, praise him with timbrel and dancing, praise him with the strings and pipe, praise him with the clash of cymbals, praise him with resounding cymbals. Let everything that has breath praise the Lord."
+                    <br>
+                    <span class="text-lg text-primary">- Psalm 150:3-6</span>
+                </p>
+            </div>
+        </section>
+
+        <!-- Who We Are Section -->
+        <section class="py-12 bg-gray-50">
+            <div class="container mx-auto px-4 max-w-3xl">
+                <h2 class="text-3xl font-bold text-center mb-4 text-primary">Who We Are</h2>
+                <p class="text-lg text-gray-700 text-center">Grace Ministries is a vibrant community of believers passionate about worship, teaching, and service. We believe in the power of music to praise God, the strength of fellowship, and the call to make a difference in our world through faith and love.</p>
+            </div>
+        </section>
+
+        <!-- Books Section -->
+        <section id="books" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">Our Books</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Book 1 -->
+                    <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition cursor-pointer book-card"
+                        data-id="1"
+                        data-title="Walking in Faith"
+                        data-img="https://picsum.photos/400/250?random=2"
+                        data-desc="A daily devotional for spiritual growth and encouragement."
+                        data-price="14.99">
+                        <img src="https://picsum.photos/400/250?random=2" alt="Book Cover: Walking in Faith" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Walking in Faith</h3>
+                            <p class="text-gray-600 mb-4">A daily devotional for spiritual growth and encouragement.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-primary">$14.99</span>
+                                <button class="bg-primary text-white px-4 py-2 rounded hover:bg-indigo-700 transition add-to-cart" data-id="1" data-title="Walking in Faith" data-price="14.99">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Book 2 -->
+                    <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition cursor-pointer book-card"
+                        data-id="2"
+                        data-title="The Power of Prayer"
+                        data-img="https://picsum.photos/400/250?random=3"
+                        data-desc="Discover the transformative power of consistent prayer life."
+                        data-price="19.99">
+                        <img src="https://picsum.photos/400/250?random=3" alt="Book Cover: The Power of Prayer" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">The Power of Prayer</h3>
+                            <p class="text-gray-600 mb-4">Discover the transformative power of consistent prayer life.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-primary">$19.99</span>
+                                <button class="bg-primary text-white px-4 py-2 rounded hover:bg-indigo-700 transition add-to-cart" data-id="2" data-title="The Power of Prayer" data-price="19.99">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Book 3 -->
+                    <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition cursor-pointer book-card"
+                        data-id="3"
+                        data-title="Biblical Foundations"
+                        data-img="https://picsum.photos/400/250?random=4"
+                        data-desc="Essential teachings for building a strong spiritual foundation."
+                        data-price="24.99">
+                        <img src="https://picsum.photos/400/250?random=4" alt="Book Cover: Biblical Foundations" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Biblical Foundations</h3>
+                            <p class="text-gray-600 mb-4">Essential teachings for building a strong spiritual foundation.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-primary">$24.99</span>
+                                <button class="bg-primary text-white px-4 py-2 rounded hover:bg-indigo-700 transition add-to-cart" data-id="3" data-title="Biblical Foundations" data-price="24.99">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center mt-8">
+                    <a href="books.html" class="  border border-primary px-6 py-3 rounded-lg font-medium hover:bg-indigo-700 hover:text-white text-primary transition">
+                        View More Books
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- BOOK MODAL -->
+<div id="book-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center">
+    <div class="bg-white rounded-lg shadow-lg max-w-lg w-full p-6 relative">
+        <button id="close-book-modal" class="absolute top-2 right-2 text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
+        <img id="modal-book-img" src="" alt="" class="w-full h-56 object-cover rounded mb-4">
+        <h3 id="modal-book-title" class="text-2xl font-bold mb-2"></h3>
+        <p id="modal-book-desc" class="text-gray-700 mb-4"></p>
+        <div class="flex justify-between items-center mb-4">
+            <span id="modal-book-price" class="text-lg font-bold text-primary"></span>
+            <div class="flex gap-2">
+                <button id="modal-add-to-cart" class="bg-primary text-white px-4 py-2 rounded hover:bg-indigo-700 transition">Add to Cart</button>
+                <button id="modal-buy-now" class="bg-accent text-white px-4 py-2 rounded hover:bg-yellow-600 transition">Buy Now</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- Shopping Cart Modal -->
+        <div id="cart-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden">
+            <div class="absolute right-0 top-0 h-full w-full md:w-1/3 bg-white shadow-lg overflow-y-auto">
+                <div class="p-6">
+                    <div class="flex justify-between items-center mb-6">
+                        <h3 class="text-2xl font-bold">Your Cart</h3>
+                        <button id="close-cart" class="text-gray-500 hover:text-gray-700">
+                            <i class="fas fa-times text-2xl"></i>
+                        </button>
+                    </div>
+                    <div id="cart-items" class="mb-6">
+                        <!-- Cart items will be added here dynamically -->
+                    </div>
+                    <div class="border-t pt-4">
+                        <div class="flex justify-between mb-4">
+                            <span class="font-bold">Total:</span>
+                            <span id="cart-total" class="font-bold">$0.00</span>
+                        </div>
+                        <button id="checkout-btn" class="w-full bg-primary text-white py-3 rounded-lg hover:bg-indigo-700 transition">
+                            Proceed to Checkout
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <!-- Events Section -->
+        <section id="events" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">Upcoming Events</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Event 1 -->
+                    <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                        <img src="https://picsum.photos/400/250?random=5" alt="Bible Study Event" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <div class="flex items-center text-gray-500 mb-2">
+                                <i class="far fa-calendar-alt mr-2"></i>
+                                <span>June 15, 2025</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">Weekly Bible Study</h3>
+                            <p class="text-gray-600 mb-4">Join us for an in-depth study of the Book of Romans.</p>
+                            <div class="flex justify-between items-center">
+                                <div class="flex items-center text-gray-500">
+                                    <i class="far fa-clock mr-2"></i>
+                                    <span>7:00 PM - 8:30 PM</span>
+                                </div>
+                                <button class="bg-primary text-white px-4 py-2 rounded hover:bg-indigo-700 transition">
+                                    Register
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Event 2 -->
+                    <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                        <img src="https://picsum.photos/400/250?random=6" alt="Youth Conference" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <div class="flex items-center text-gray-500 mb-2">
+                                <i class="far fa-calendar-alt mr-2"></i>
+                                <span>July 22-24, 2025</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">Youth Conference</h3>
+                            <p class="text-gray-600 mb-4">Three days of worship, teaching, and fellowship for ages 13-25.</p>
+                            <div class="flex justify-between items-center">
+                                <div class="flex items-center text-gray-500">
+                                    <i class="far fa-clock mr-2"></i>
+                                    <span>All Day Event</span>
+                                </div>
+                                <button class="bg-primary text-white px-4 py-2 rounded hover:bg-indigo-700 transition">
+                                    Register
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Event 3 -->
+                    <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                        <img src="https://picsum.photos/400/250?random=7" alt="Prayer Retreat" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <div class="flex items-center text-gray-500 mb-2">
+                                <i class="far fa-calendar-alt mr-2"></i>
+                                <span>August 5, 2025</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">Prayer Retreat</h3>
+                            <p class="text-gray-600 mb-4">A day of prayer, reflection, and spiritual renewal.</p>
+                            <div class="flex justify-between items-center">
+                                <div class="flex items-center text-gray-500">
+                                    <i class="far fa-clock mr-2"></i>
+                                    <span>9:00 AM - 4:00 PM</span>
+                                </div>
+                                <button class="bg-primary text-white px-4 py-2 rounded hover:bg-indigo-700 transition">
+                                    Register
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center mt-8">
+                    <a href="events.html" class="  border border-primary px-6 py-3 rounded-lg font-medium hover:bg-indigo-700 hover:text-white  text-primary transition">
+                        View More Events
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">Contact Us</h2>
+                <div class="max-w-2xl mx-auto bg-white rounded-lg shadow-md p-8">
+                    <form id="contact-form">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label for="name" class="block text-gray-700 mb-2">Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required>
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 mb-2">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required>
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <label for="subject" class="block text-gray-700 mb-2">Subject</label>
+                            <input type="text" id="subject" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required>
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 mb-2">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-primary text-white py-3 rounded-lg hover:bg-indigo-700 transition">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Grace Ministries</h3>
+                    <p class="mb-4">Spreading the gospel through teaching, worship, and service.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-accent transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white hover:text-accent transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white hover:text-accent transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white hover:text-accent transition"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="hover:text-accent transition">Home</a></li>
+                        <li><a href="#books" class="hover:text-accent transition">Books</a></li>
+                        <li><a href="#sow" class="hover:text-accent transition">Sow Seeds</a></li>
+                        <li><a href="#events" class="hover:text-accent transition">Events</a></li>
+                        <li><a href="#contact" class="hover:text-accent transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Info</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>123 Faith Avenue, Spiritual City, SC 12345</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-2"></i>
+                            <span>(123) 456-7890</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2"></i>
+                            <span>info@graceministries.org</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p>&copy; 2025 Grace Ministries. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Cart Button -->
+    <div class="fixed bottom-8 right-8">
+        <button id="cart-button" class="bg-primary text-white p-4 rounded-full shadow-lg hover:bg-indigo-700 transition">
+            <i class="fas fa-shopping-cart text-xl"></i>
+            <span id="cart-count" class="absolute -top-2 -right-2 bg-accent text-white text-xs font-bold rounded-full h-6 w-6 flex items-center justify-center">0</span>
+        </button>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+     
+        document.getElementById('contact-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            
+            // In a real implementation, this would send the message
+            alert(`Thank you for your message, ${name}! We'll get back to you soon.`);
+            e.target.reset();
+        });
+        
+        // Event Registration
+        document.querySelectorAll('#events button').forEach(button => {
+            button.addEventListener('click', () => {
+                const eventTitle = button.closest('.p-6').querySelector('h3').textContent;
+                alert(`Thank you for registering for "${eventTitle}"!`);
+            });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // BOOK MODAL LOGIC
+const bookCards = document.querySelectorAll('.book-card');
+const bookModal = document.getElementById('book-modal');
+const closeBookModal = document.getElementById('close-book-modal');
+const modalBookImg = document.getElementById('modal-book-img');
+const modalBookTitle = document.getElementById('modal-book-title');
+const modalBookDesc = document.getElementById('modal-book-desc');
+const modalBookPrice = document.getElementById('modal-book-price');
+const modalAddToCart = document.getElementById('modal-add-to-cart');
+const modalBuyNow = document.getElementById('modal-buy-now');
+
+let currentBook = {};
+
+bookCards.forEach(card => {
+    card.addEventListener('click', (e) => {
+        // Prevent click on Add to Cart button from opening modal
+        if (e.target.classList.contains('add-to-cart')) return;
+        currentBook = {
+            id: card.getAttribute('data-id'),
+            title: card.getAttribute('data-title'),
+            img: card.getAttribute('data-img'),
+            desc: card.getAttribute('data-desc'),
+            price: card.getAttribute('data-price')
+        };
+        modalBookImg.src = currentBook.img;
+        modalBookTitle.textContent = currentBook.title;
+        modalBookDesc.textContent = currentBook.desc;
+        modalBookPrice.textContent = `$${parseFloat(currentBook.price).toFixed(2)}`;
+        bookModal.classList.remove('hidden');
+    });
+});
+closeBookModal.addEventListener('click', () => bookModal.classList.add('hidden'));
+
+// Add to Cart from Modal
+modalAddToCart.addEventListener('click', () => {
+    // Simulate click on the corresponding Add to Cart button
+    document.querySelector(`.add-to-cart[data-id="${currentBook.id}"]`).click();
+    bookModal.classList.add('hidden');
+});
+
+// BUY NOW MODAL LOGIC
+const buyModal = document.getElementById('buy-modal');
+const closeBuyModal = document.getElementById('close-buy-modal');
+const buyModalTitle = document.getElementById('buy-modal-title');
+const buyModalPrice = document.getElementById('buy-modal-price');
+const buyForm = document.getElementById('buy-form');
+
+modalBuyNow.addEventListener('click', () => {
+    buyModalTitle.textContent = currentBook.title;
+    buyModalPrice.textContent = `Total: $${parseFloat(currentBook.price).toFixed(2)}`;
+    buyModal.classList.remove('hidden');
+    bookModal.classList.add('hidden');
+});
+closeBuyModal.addEventListener('click', () => buyModal.classList.add('hidden'));
+buyForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Payment successful! Thank you for your purchase.');
+    buyModal.classList.add('hidden');
+});
+
+    </script>
+</body>
+</html>

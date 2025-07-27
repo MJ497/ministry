@@ -11,6 +11,13 @@ tailwind.config = {
             }
         };
 
+ // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
 
            // Shopping Cart Functionality
         let cart = [];
@@ -120,14 +127,5 @@ tailwind.config = {
             cartModal.classList.add('hidden');
         });
         
-        // Form Submissions
-        document.getElementById('donation-form').addEventListener('submit', (e) => {
-            e.preventDefault();
-            const amount = document.getElementById('amount').value;
-            const message = document.getElementById('message').value;
-            
-            // In a real implementation, this would process the donation
-            alert(`Thank you for your donation of $${amount}!`);
-            e.target.reset();
-        });
+       
         
